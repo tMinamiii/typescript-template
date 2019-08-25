@@ -6,8 +6,8 @@
   "scripts": {
     "start": "ts-node --project tsconfig.json src/index.ts",
     "build": "tsc -p tsconfig.json",
-    "lint": "eslint --ext .js,.ts .",
-    "lintfix": "eslint --fix --ext .js,.tx .",
+    "lint": "eslint --ext .js,.ts --ignore-path .eslintignore .",
+    "lintfix": "eslint --fix --ext .js,.tx --ignore-path .eslintignore .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "tMinami",
@@ -19,7 +19,7 @@
   },
   "lint-staged": {
     "*.ts": [
-      "eslint --ext .ts --fix src",
+      "eslint --ext .ts --fix --ignore-path .eslintignore .",
       "git add"
     ]
   },
