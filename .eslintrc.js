@@ -14,7 +14,6 @@ module.exports = {
   },
   extends: [
     'eslint:recommended',
-    'plugin:prettier/recommended',
     'plugin:@typescript-eslint/recommended'
   ],
   plugins: [
@@ -34,7 +33,6 @@ module.exports = {
     }],
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-    'prettier/prettier': 'error',
     'require-jsdoc': 'off',
     'valid-jsdoc': 'off',
     'import/order': 'error',
